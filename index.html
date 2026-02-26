@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Base Click Game</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 24px;
+      border-radius: 12px;
+      border: none;
+      background: #3b82f6;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Base Click Game</h1>
+  <h2 id="score">Score: 0</h2>
+  <button onclick="addScore()">CLICK</button>
+
+  <script>
+    let score = 0;
+    function addScore() {
+      score++;
+      document.getElementById("score").innerText = "Score: " + score;
+    }
+  </script>
+
+</body>
+</html>
 
